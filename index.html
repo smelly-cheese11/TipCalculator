@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <header>
+        <img src="Tip.png" alt="" class="logo">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="topSection">
+                <div class="label">
+                    <label for="input">Bill</label>
+                </div>
+
+                <div class="input_wrapper">
+                    <input type="number" placeholder="0.0" id="input">
+                    <img src="Tip (1).png" alt="" class="money">
+                </div>
+
+                <div class="label">
+                    <label for="customTip">Select Tip %</label>
+                </div>
+
+                <div class="btnContainer">
+                    <button class="btn">5%</button>
+                    <button class="btn">10%</button>
+                    <button class="btn">15%</button>
+                    <button class="btn">25%</button>
+                    <button class="btn">50%</button>
+                    <input type="number" placeholder="Custom" id="CustomTip">
+                </div>
+
+                <div class="label">
+                    <label for="people">Number of People</label>
+                    <p id="error"></p>
+                </div>
+
+                <div class="peopleWrapper">
+                    <input type="number" placeholder="1" id="people">
+                    <img src="Tip (2).png" alt="" class="personimg">
+                </div>
+            </div>
+
+
+            <div class="bottomSection">
+                <div class="amount">
+                    <div class="desc">
+                        <p>Tip Amount <br> <span>/ Person</span></p>
+                        <div class="tipValue">$5</div>
+                    </div>
+                    <div class="desc">
+                        <p>Total <br> <span>/ Person</span></p>
+                        <div class="tipValue">$200</div>
+                    </div>
+                </div>
+                <button class="reset">Reset</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
